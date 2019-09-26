@@ -1,7 +1,8 @@
 import React  from 'react';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
-import Movie  from './Movie'
+import Movie from './Movie';
+import './Movie.css'
 
 const GET_MOVIES = gql `
     query {
@@ -34,9 +35,9 @@ function MovieList() {
       />
     );
   return  (
-    <section className="movie_list">
+    <div className="movie_list">
       {component}
-    </section>
+    </div>
   )
 }
 
